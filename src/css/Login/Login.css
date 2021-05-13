@@ -1,0 +1,68 @@
+	/* Coded with love by Mutiullah Samim */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #B00021 !important;
+    }
+    .user_card {
+        height: 600px;
+        width: 500px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    .brand_logo_container {
+        position: absolute;
+        height: 170px;
+        width: 170px;
+        top: -40px;
+        border-radius: 50%;
+        background: #B00021;
+        padding: 10px;
+        text-align: center;
+    }
+    .brand_logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+  
+    .login_btn {
+        width: 100%;
+        background: #B00021 !important;
+        color: white !important;
+    }
+  
+    .login_container {
+        padding: 0 2rem;
+    }
+    .input-group-text {
+        background: #B00021 !important;
+        color: white !important;
+        border: 0 !important;
+        border-radius: 0.25rem 0 0 0.25rem !important;
+    }
+    .form-control {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+    .links {
+        color: #B00021
+    }
+    .links:hover{
+        color: #B00021 !important;
+        text-decoration: none;
+    }
+  .MentorCity{
+      color:#B00021;
+  }

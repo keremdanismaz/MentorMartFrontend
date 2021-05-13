@@ -1,0 +1,30 @@
+body{
+    background-color:#B00021 !important;
+}
+.card{
+    background-color: #fff;
+}
+.btn{
+    background-color:#B00021;
+    color:#fff;
+}
+.AgainLogin{
+    color:#B00021;
+    text-decoration:none;
+}
+.AgainLogin:hover{
+    color:#B00021;
+    text-decoration:none;
+}
+.img-res{
+    height:auto;
+    width:60px;
+    margin:3px;
+}
+.smalltext{
+    margin:none;
+    padding:none;   
+    text-align:center;
+    display:block;
+    font-size: 12px;
+}

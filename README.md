@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Kendi Notlarım ----------------------------------------------------------------
+
+npm install -> npm i kurduk.
+npx create-react-app mentorcity -> proje dosyasını kurduk.
+open new folder -> projemizi açtık
+içideki gereksiz dosyaları sildik.
+
+projemize sağ tık yapıp powershelli açtık
+git init
+git add .
+git commit -m "first commit"
+git push https://github.com/keremdanismaz/MentorCityUI.git 
+yaparak kodumuzu MentorCityUI reposuna ekledik.
+
+projemize testleri yapmak için fakeapi(json placeholder) kurduk.
+npm i json-server
+daha sonra api adında en üst katmanda bir klosör oluşturup daha sonra içine bir json formatlı bir veri attık.
+cd api 
+json-server --watch db.json diyerek 3000 üncü portta apiyi ayağa kaldırdık.
+
+npm i redux diyerek reduxı kurduk.
+npm i react-redux diyip reacta uyumlu reduxuda kurduk.
+
+
