@@ -13,6 +13,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Role from '../Role Page/Role';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route exact path="/Login">
           <Login />
+        </Route>
+        <Route exact path="/Role">
+          <Role/>
         </Route>
       </Switch>
     </Router>

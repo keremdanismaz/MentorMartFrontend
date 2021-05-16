@@ -5,8 +5,8 @@ body{
     background-color: #fff;
 }
 .btn{
-    background-color:#B00021;
-    color:#fff;
+    background-color:#B00021 !important;
+    color:#fff !important;
 }
 .AgainLogin{
     color:#B00021;
