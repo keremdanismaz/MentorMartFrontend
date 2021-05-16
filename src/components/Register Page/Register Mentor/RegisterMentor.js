@@ -19,33 +19,33 @@ class RegisterMentor extends Component {
                                 <form>
                                     <div class="form-row">
                                         <div class="col form-group">
-                                            <input type="text" name="" value="" class="form-control" placeholder="Ad*" required />
+                                            <input type="text" name="" class="form-control" placeholder="Ad*" required />
                                         </div>
                                         <div class="col form-group">
-                                            <input type="text" name="" value="" class="form-control" placeholder="Soyad*"
+                                            <input type="text" name="" class="form-control" placeholder="Soyad*"
                                                 required />
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="" value="" class="form-control" placeholder="Email*" required />
+                                        <input type="email" name="" class="form-control" placeholder="Email*" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="text" name="" value="" class="form-control" placeholder="Kurumunuzun Adı*"
+                                        <input type="text" name="" class="form-control" placeholder="Kurumunuzun Adı*"
                                             required />
                                     </div>
 
                                     <div class="form-group">
                                         <div class="form-group">
-                                            <input type="password" class="form-control" name="" value=""
+                                            <input type="password" class="form-control" name=""
                                                 placeholder="Şifre Oluştur En az 6 karakter*" required />
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="form-group">
-                                            <input class="form-control" type="password" name="" value=""
+                                            <input class="form-control" type="password" name=""
                                                 placeholder="Şifreyi Tekrar Gir*" required />
                                         </div>
                                     </div>

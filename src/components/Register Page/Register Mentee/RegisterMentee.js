@@ -19,16 +19,16 @@ class RegisterMentee extends Component {
                                 <form>
                                     <div class="form-row">
                                         <div class="col form-group">
-                                            <input type="text" name="" value="" class="form-control" placeholder="Ad*" required />
+                                            <input type="text" name="" class="form-control" placeholder="Ad*" required />
                                         </div>
                                         <div class="col form-group">
-                                            <input type="text" name="" value="" class="form-control" placeholder="Soyad*"
+                                            <input type="text" name="" class="form-control" placeholder="Soyad*"
                                                 required />
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="" value="" class="form-control" placeholder="Email*" required />
+                                        <input type="email" name="" class="form-control" placeholder="Email*" required />
                                     </div>
 
                                     <div class="form-group">
@@ -44,12 +44,12 @@ class RegisterMentee extends Component {
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="password" name="" value="" class="form-control"
+                                        <input type="password" name="" class="form-control"
                                             placeholder="Şifre Oluştur En az 6 karakter*" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="password" name="" value="" class="form-control"
+                                        <input type="password" name="" class="form-control"
                                             placeholder="Şifreyi Tekrar Gir*" required />
                                     </div>
 

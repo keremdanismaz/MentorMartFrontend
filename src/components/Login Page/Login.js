@@ -23,19 +23,19 @@ class Login extends Component {
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fa fa-user"></i></span>
                                     </div>
-                                    <input type="email" name="" class="form-control input_user" value="" placeholder="Email*"
+                                    <input type="email" name="" class="form-control input_user"  placeholder="Email*"
                                         required />
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fa fa-key"></i></span>
                                     </div>
-                                    <input type="password" name="" class="form-control input_pass" value="" placeholder="Şifre*"
+                                    <input type="password" name="" class="form-control input_pass" placeholder="Şifre*"
                                         required />
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 login_container">
-                                    <a href="../Html5/Mentee/KurumBilgileri.html" type="submit" name="button"
-                                        class="btn login_btn"><i class="fa fa-sign-in-alt"></i> Giriş Yap</a>
+                                    <Link to="/CorporationInfo" type="submit" name="button"
+                                        class="btn login_btn"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
                                 </div>
                             </form>
                         </div>
