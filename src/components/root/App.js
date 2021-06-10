@@ -1,27 +1,48 @@
 import React from 'react';
+
+// Ana Sayfa Componentleri
 import Navbar from "../Home Page/Navbar/Navi"
 import AboutSection from "../Home Page/About Section/AboutSection"
 import WhyUsSection from '../Home Page/Why Us Section/WhyUsSection';
 import WhatMentorCity from '../Home Page/What MentorCity/WhatMentorCity';
 import Footer from '../Home Page/Footer Section/Footer';
+
+// Kayıt Ol sayfaları Componentleri
 import RegisterOption from '../Register Page/Register Option/RegisterOption';
 import RegisterMentee from '../Register Page/Register Mentee/RegisterMentee';
 import RegisterMentor from '../Register Page/Register Mentor/RegisterMentor';
+
+// Giriş sayfaları Componentleri
 import Login from '../Login Page/Login';
+import Role from '../Role Page/Role';
+
+// Mentee sayfaları Componentleri
+import MenteeLeftSidebar from '../Mentee Pages/LeftSidebar';
+import MenteeCorporationInfo from '../Mentee Pages/CorporationInfo';
+import MenteeNavbar from '../Mentee Pages/Navbar';
+import MenteeSettings from '../Mentee Pages/Settings';
+import MenteeMeetings from '../Mentee Pages/Meetings';
+import MenteeQuestion from '../Mentee Pages/Questions';
+import MenteeNotes from '../Mentee Pages/Notes';
+import MentorInfo from '../Mentee Pages/MentorInfo';
+
+// Mentor sayfaları Componentleri
+import MentorLeftSidebar from '../Mentor Pages/LeftSidebar';
+import MentorCorporationInfo from '../Mentor Pages/CorporationInfo';
+import MentorNavbar from '../Mentor Pages/Navbar';
+import MentorNotes from '../Mentor Pages/Notes';
+import MentorQuestion from '../Mentor Pages/Question';
+import MentorMeetings from '../Mentor Pages/Meetings';
+import MentorSettings from '../Mentor Pages/Settings';
+import MenteeInfo from '../Mentor Pages/MenteeInfo';
+import PersonelInformation from '../Mentor Pages/PersonelInformation';
+
+// React-router-dom
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Role from '../Role Page/Role';
-import LeftSidebar from '../Mentee Pages/LeftSidebar';
-import CorporationInfo from '../Mentee Pages/CorporationInfo';
-import MenteeNavbar from '../Mentee Pages/Navbar';
-import Notes from '../Mentee Pages/Notes';
-import Question from '../Mentee Pages/Questions';
-import Meetings from '../Mentee Pages/Meetings';
-import MentorInfo from '../Mentee Pages/MentorInfo';
-import Settings from '../Mentee Pages/Settings';
 
 
 function App() {
@@ -29,7 +50,7 @@ function App() {
     <Router>
       <Switch>
 
-
+        {/* Bütün Kullanıcıların Ulaşabildiği sayfalar- Login Olmasına gerek yok */}
         <Route exact path="/">
           <Navbar />
           <AboutSection />
@@ -60,50 +81,50 @@ function App() {
           <Role />
         </Route>
 
-
-        <Route exact path="/CorporationInfo">
+        {/* Sadece Menteeler Ulaşabilir. */}
+        <Route exact path="/Mentee/CorporationInfo">
           <div class="d-flex" id="wrapper">
-            <LeftSidebar />
+            <MenteeLeftSidebar />
             <div id="page-content-wrapper">
               <MenteeNavbar />
-              <CorporationInfo />
+              <MenteeCorporationInfo />
+            </div>
+          </div>
+        </Route>
+        
+        <Route exact path="/Mentee/Notes">
+          <div class="d-flex" id="wrapper">
+            <MenteeLeftSidebar />
+            <div id="page-content-wrapper">
+              <MenteeNavbar />
+              <MenteeNotes />
+            </div>
+          </div>
+        </Route>
+      
+        <Route exact path="/Mentee/Questions">
+          <div class="d-flex" id="wrapper">
+            <MenteeLeftSidebar />
+            <div id="page-content-wrapper">
+              <MenteeNavbar />
+              <MenteeQuestion />
             </div>
           </div>
         </Route>
 
-        <Route exact path="/Notes">
+        <Route exact path="/Mentee/Meetings">
           <div class="d-flex" id="wrapper">
-            <LeftSidebar />
+            <MenteeLeftSidebar />
             <div id="page-content-wrapper">
               <MenteeNavbar />
-              <Notes />
+              <MenteeMeetings />
             </div>
           </div>
         </Route>
-
-        <Route exact path="/Questions">
+        
+        <Route exact path="/Mentee/MentorInfo">
           <div class="d-flex" id="wrapper">
-            <LeftSidebar />
-            <div id="page-content-wrapper">
-              <MenteeNavbar />
-              <Question />
-            </div>
-          </div>
-        </Route>
-
-        <Route exact path="/Meetings">
-          <div class="d-flex" id="wrapper">
-            <LeftSidebar />
-            <div id="page-content-wrapper">
-              <MenteeNavbar />
-              <Meetings />
-            </div>
-          </div>
-        </Route>
-
-        <Route exact path="/MentorInfo">
-          <div class="d-flex" id="wrapper">
-            <LeftSidebar />
+            <MenteeLeftSidebar />
             <div id="page-content-wrapper">
               <MenteeNavbar />
               <MentorInfo />
@@ -111,17 +132,86 @@ function App() {
           </div>
         </Route>
 
-        <Route exact path="/Settings">
+        <Route exact path="/Mentee/Settings">
           <div class="d-flex" id="wrapper">
-            <LeftSidebar />
+            <MenteeLeftSidebar />
             <div id="page-content-wrapper">
               <MenteeNavbar />
-              <Settings />
+              <MenteeSettings />
+            </div>
+          </div>
+        </Route>
+        
+        {/* Sadece Mentorlar Ulaşabilir. */}
+        <Route exact path="/Mentor/CorporationInfo">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MentorCorporationInfo />
+            </div>
+          </div>
+        </Route>
+     
+        <Route exact path="/Mentor/Notes">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MentorNotes />
             </div>
           </div>
         </Route>
 
+        <Route exact path="/Mentor/Questions">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MentorQuestion />
+            </div>
+          </div>
+        </Route>
 
+        <Route exact path="/Mentor/Meetings">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MentorMeetings />
+            </div>
+          </div>
+        </Route>
+
+        <Route exact path="/Mentor/MenteesInfo">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MenteeInfo />
+            </div>
+          </div>
+        </Route>
+
+        <Route exact path="/Mentor/PersonelInformation">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <PersonelInformation />
+            </div>
+          </div>
+        </Route>
+
+        <Route exact path="/Mentor/Settings">
+          <div class="d-flex" id="wrapper">
+            <MentorLeftSidebar />
+            <div id="page-content-wrapper">
+              <MentorNavbar />
+              <MentorSettings />
+            </div>
+          </div>
+        </Route>
 
       </Switch>
     </Router>

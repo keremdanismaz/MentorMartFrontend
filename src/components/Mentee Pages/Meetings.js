@@ -10,11 +10,7 @@ export default class Meetings extends Component {
 
                 <h3 class="text-center m-4 headerH3">
                     <span class="font-weight-bold">
-                        <i class="fa fa-user-cog"></i>
-                        Mentorunuz</span>
-                    Tarafından Sizin İçin Belirlenen
-                    <span class="font-weight-bold">
-                        Toplantılar <i class="fa fa-calendar"></i>
+                        <i class="fa fa-user-cog"></i> Mentorunuz</span> Tarafından Sizin İçin Belirlenen <span class="font-weight-bold"> Toplantılar <i class="fa fa-calendar"></i>
                     </span>
                 </h3>
 

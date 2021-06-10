@@ -9,11 +9,7 @@ export default class Notes extends Component {
                 
                 <h3 class="text-center m-4 headerH3">
                     <span class="font-weight-bold">
-                        <i class="fa fa-user-cog"></i>
-                    Mentorunuz</span>
-                Tarafından Sizin İçin Hazırlanan
-                <span class="font-weight-bold">
-                        Notlar <i class="fa fa-check-square"></i>
+                        <i class="fa fa-user-cog"></i> Mentorunuz</span> Tarafından Sizin İçin Hazırlanan <span class="font-weight-bold"> Notlar <i class="fa fa-check-square"></i>
                     </span>
                 </h3>
 

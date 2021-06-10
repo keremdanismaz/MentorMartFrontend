@@ -6,6 +6,7 @@ import Logo from "../../images/Logo.PNG"
 class Login extends Component {
     render() {
         return (
+
             <div class="container h-100 mt-5">
                 <div class="d-flex justify-content-center h-100">
                     <div class="user_card">
@@ -34,7 +35,7 @@ class Login extends Component {
                                         required />
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 login_container">
-                                    <Link to="/CorporationInfo" type="submit" name="button"
+                                    <Link to="/Mentee/CorporationInfo" type="submit" name="button"
                                         class="btn login_btn"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
                                 </div>
                             </form>
@@ -54,7 +55,8 @@ class Login extends Component {
                     </div>
                 </div>
             </div>
-        )
+       
+       )
     }
 }
 export default Login

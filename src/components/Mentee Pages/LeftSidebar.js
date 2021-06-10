@@ -15,19 +15,19 @@ export default class LeftSidebar extends Component {
 
                 <div class="list-group list-group-flush">
 
-                    <Link to="/CorporationInfo" class="list-group-item list-group-item-action"><i
+                    <Link to="/Mentee/CorporationInfo" class="list-group-item list-group-item-action"><i
                         class="fa fa-info-circle"></i>Kurum Bilgileri</Link>
 
-                    <Link to="/Notes" class="list-group-item list-group-item-action"><i
+                    <Link to="/Mentee/Notes" class="list-group-item list-group-item-action"><i
                         class="fa fa-check-square"></i>Notlar</Link>
 
-                    <Link to="/Questions" class="list-group-item list-group-item-action"><i
+                    <Link to="/Mentee/Questions" class="list-group-item list-group-item-action"><i
                         class="fa fa-question-circle"></i>Sorular</Link>
 
-                    <Link to="/Meetings" class="list-group-item list-group-item-action"><i
+                    <Link to="/Mentee/Meetings" class="list-group-item list-group-item-action"><i
                         class="fa fa-calendar"></i>Toplantılar</Link>
 
-                    <Link to="/MentorInfo" class="list-group-item list-group-item-action"><i
+                    <Link to="/Mentee/MentorInfo" class="list-group-item list-group-item-action"><i
                         class="fa fa-id-badge"></i>Mentor Bilgileri</Link>
 
                     <div class="social-links list-group-item list-group-item-action ">

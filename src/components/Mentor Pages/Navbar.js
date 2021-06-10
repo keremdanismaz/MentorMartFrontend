@@ -11,8 +11,7 @@ export default class Navbar extends Component {
 
     render() {
         return (
-
-            //  Mentee Navbar Start
+            //  Mentor Navbar Start
             <nav class="navbar navbar-expand-lg navbar-light  border-bottom ">
 
                 <button onClick={this.click} class="btn btn-sm" id="menu-toggle">
@@ -40,7 +39,7 @@ export default class Navbar extends Component {
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <Link to="/Mentee/Settings" class="dropdown-item">Hesap Ayarları</Link>
+                                <Link to="/Mentor/Settings" class="dropdown-item">Hesap Ayarları</Link>
                                 <div class="dropdown-divider"></div>
                                 <Link to="/" class="dropdown-item">Çıkış Yap</Link>
                             </div>
@@ -51,8 +50,7 @@ export default class Navbar extends Component {
                 </div>
 
             </nav>
-            //  Mentee Navbar End
-
+            //  Mentor Navbar End
         )
     }
 }

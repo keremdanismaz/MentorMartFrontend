@@ -7,6 +7,7 @@ import Acordion4 from "../../../images/Acordion4.PNG"
 import AnaSayfaYardimlasma from "../../../images/AnaSayfaYardimlasma.PNG"
 
 class WhatMentorCity extends Component {
+
     Acordion = () => {
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -22,17 +23,22 @@ class WhatMentorCity extends Component {
             });
         }
     };
+
     render() {
         return (
+
             // <!-- Mentorlar ve mentee için MentorCity Nedir? Begin -->
             <section id="Mentorsİnfo">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-lg-4 ">
                             <img src={AnaSayfaYardimlasma} class="img-fluid"
                                 alt="Mentor Mentee bilgilendirme" />
                         </div>
+                        
                         <div class="col-lg-8 ">
+
                             <button onClick={() => this.Acordion()} class="accordion">Mentor ya da mentee olarak kayıt olun <i class="fa fa-plus"></i></button>
                             <div class="panel">
                                 <div class="container">
@@ -68,8 +74,7 @@ class WhatMentorCity extends Component {
                                 </div>
                             </div>
 
-                            <button onClick={() => this.Acordion()} class="accordion">Toplantı günü saati ve yerini belirleyin <i
-                                class="fa fa-plus"></i></button>
+                            <button onClick={() => this.Acordion()} class="accordion">Toplantı günü saati ve yerini belirleyin <i class="fa fa-plus"></i></button>
                             <div class="panel">
                                 <div class="container">
                                     <div class="row">
@@ -175,11 +180,13 @@ class WhatMentorCity extends Component {
                                     </div>
                                 </div>
                             </div>
+                        
                         </div>
                     </div>
                 </div>
             </section>
-        )
+       
+       )
     }
 }
 export default WhatMentorCity
