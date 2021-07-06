@@ -14,6 +14,7 @@ import RegisterMentor from '../Register Page/Register Mentor/RegisterMentor';
 
 // Giriş sayfaları Componentleri
 import Login from '../Login Page/Login';
+import Register from '../Register Page/Register Mentee/Register';
 import Role from '../Role Page/Role';
 
 // Mentee sayfaları Componentleri
@@ -75,6 +76,10 @@ function App() {
 
         <Route exact path="/Login">
           <Login />
+        </Route>
+
+        <Route exact path="/Register">
+          <Register />
         </Route>
 
         <Route exact path="/Role">
@@ -212,6 +217,7 @@ function App() {
             </div>
           </div>
         </Route>
+
 
       </Switch>
     </Router>

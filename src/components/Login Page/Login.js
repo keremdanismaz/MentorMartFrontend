@@ -1,10 +1,24 @@
 import React, { Component } from 'react'
 import '../../css/Login/Login.css';
 import { Link } from "react-router-dom";
+// import { Redirect } from 'react-router'
 import Logo from "../../images/Logo.PNG"
+//import { GoogleLogin } from 'react-google-login'
 
 class Login extends Component {
+
     render() {
+       // const clientId = "31232930414-s4elaa84d5rnu7rp479b4p6ds5b4vn12.apps.googleusercontent.com";
+
+        // const onSuccess = (res) => {
+
+           
+        // };
+
+        // function onFailure(res) {
+        //     console.log('[Login Failed] res:', res)
+        // };
+
         return (
 
             <div class="container h-100 mt-5">
@@ -24,7 +38,7 @@ class Login extends Component {
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fa fa-user"></i></span>
                                     </div>
-                                    <input type="email" name="" class="form-control input_user"  placeholder="Email*"
+                                    <input type="email" name="" class="form-control input_user" placeholder="Email*"
                                         required />
                                 </div>
                                 <div class="input-group mb-3">
@@ -35,7 +49,7 @@ class Login extends Component {
                                         required />
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 login_container">
-                                    <Link to="/Mentee/CorporationInfo" type="submit" name="button"
+                                    <Link to="/Mentor/CorporationInfo" type="submit" name="button"
                                         class="btn login_btn"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
                                 </div>
                             </form>
@@ -45,18 +59,31 @@ class Login extends Component {
                             <div class="d-flex justify-content-center ">
                                 Kayıtlı değil misin? <Link to="/RegisterOption" class="ml-2 links">  <i
                                     class="fa fa-user-plus"></i>
-                                Kayıt ol</Link>
+                                    Kayıt ol</Link>
 
                             </div>
-                            <div class="justify-content-center d-flex alert alert-danger mt-3" role="alert">
+                            {/* <div class="justify-content-center d-flex alert alert-danger mt-3" role="alert">
                                 Hata Giriş Yapılamadı!
-                        </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
+
+                {/* <div>
+                    <GoogleLogin
+                        clientId={clientId}
+                        buttonText="Login"
+                        onSuccess={onSuccess}
+                        onFailure={onFailure}
+                        cookiePolicy={'single_host_origin'}
+                        style={{ marginTop: '100px' }}
+                        isSignedIn={true}
+                    />
+                </div> */}
+
             </div>
-       
-       )
+
+        )
     }
 }
 export default Login

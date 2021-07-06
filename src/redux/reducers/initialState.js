@@ -1,5 +1,9 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     roles: [],
-    corporation:[]
+    corporation: [],
+    users: [],
+    notes:[],
+    getUserById: [],
+    getNoteById: [],
 }

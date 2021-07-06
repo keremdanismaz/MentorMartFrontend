@@ -1,145 +1,100 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as userActions from "../../redux/actions/userAction";
+import * as noteActions from "../../redux/actions/noteActions";
+import * as getUserByIdActions from "../../redux/actions/getUserByIdAction";
+import * as getNoteByIdActions from "../../redux/actions/getNotesByIdAction";
 
-export default class Notes extends Component {
+class Notes extends Component {
+    componentDidMount(userId) {
+        this.props.actions.getUser(4);
+        this.props.actions.getNotes();
+        this.props.actions.getUserById(40);
+    }
     render() {
         return (
 
-            // Notes Begin
             <div class="container-fluid content">
-                
+
                 <h3 class="text-center m-4 headerH3">
                     <span class="font-weight-bold">
-                        <i class="fa fa-user-cog"></i> Mentorunuz</span> Tarafından Sizin İçin Hazırlanan <span class="font-weight-bold"> Notlar <i class="fa fa-check-square"></i>
+                        <i class="fa fa-user-cog"></i> Sayın Mentee</span> Mentorunzun Sizin İçin <span class="font-weight-bold">
+                        Eklediği Notlar <i class="fa fa-check-square"></i>
                     </span>
                 </h3>
 
                 <ul class="stickyul">
 
-                    <li class="stickyli">
-                        <div class="stickya">
-                            <h2 class="stickyh2">1 Algoritmaları Öğrenme</h2>
-                            <p class="stickyp">Algoritmalar bilgisayar programları yazmaya yararlar. Programı bir yemeğe
-                            benzetirsek, algoritmaya o yemeğin tarifi diyebiliriz. Kodlama ise tarifin,
-                            bilgisayarın anlayacağı bir programlama dili ile hazırlanmasına karşılık geliyor.
-                            Kodlamayı hakkıyla yapabilmek için öncelikle algoritma mantığını öğrenmek gerekiyor.
-                        </p>
-                            <ul class="stickyInfoUl">
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
-                                    <a class="stickyInfoA" href="https://www.w3schools.com/">Algoritma Analizi</a>
-                                </li>
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Bitiş Tarihi </span>
-                                    <input class="stickyInfoInput" type="datetime" name="" value="24-07-2021"
-                                        disabled />
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                  
-                    <li class="stickyli">
-                        <div class="stickya">
-                            <h2 class="stickyh2">2 Veri Yapıları Neden Önemli</h2>
-                            <p class="stickyp">Data Structure ve Algoritma konusu yazılım geliştirme sürecinde belki de
-                            en önemli yapı taşlarından birisidir. Çoğumuzun teğet geçtiği bu çok önemli konu
-                            hakkında bir yazı dizisi hazırlamaya karar verdim. Data Structure And Algorithms In Java
-                            , Robert LaFore, kitabının rehberliğinde okuduğum bölümleri sırasıyla sizlerle
-                            paylaşacağım.
-                            Öncelikle Data Structure ve Algoritma dediğimizde zihnimizde ne canlanmalı? Data
-                            Structure ları bilmemizin ve uygulamamızın bize ne gibi katkıları olacak (Amazon,Google
-                            ‘da çalışma fırsatı :)
-                        </p>
-                            <ul class="stickyInfoUl">
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
-                                    <a class="stickyInfoA" href="https://www.w3schools.com/">Algoritma Analizi</a>
-                                </li>
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Bitiş Tarihi </span>
-                                    <input class="stickyInfoInput" type="datetime" name="" value="24-07-2021"
-                                        disabled />
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                   
-                    <li class="stickyli">
-                        <div class="stickya">
-                            <h2 class="stickyh2">3 Web Programlama Bilgisi Edin</h2>
-                            <p class="stickyp">Özel bir web sitesi oluşturmak için ilk etapta HTML & CSS gibi temel ve
-                            web tasarım teknolojilerine ihtiyaç duyulur. Tabii ki bu buz dağının görünen yüzüdür.
-                            İşte bu kısımlarla (sayfa açıldığında yüklenen tasarım, renkler, font ebatları,
-                            kullanıcı deneyimi vb.) Front-End Developer ilgilenir.
+                    {this.props.notes.map(note => (
 
-                            Eğer web sitesinde kullanıcı etkileşimi olacak ise (üye girişi, form, sayaç, içerik
-                            yönetim sistemi vs.) bu durumda web programlama devreye girer. Bu kısımla ilgilenen
-                            uzmana Back-End Developer denir.
+                        < li class="stickyli" >
+                            <div class="stickya">
+                                <h2 class="stickyh2">{note.noteTitle}</h2>
+                                <p class="stickyp">{note.noteDescription}</p>
+                                <ul class="stickyInfoUl">
+                                    <li class="stickyInfoLi">
+                                        <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
+                                        <a class="stickyInfoA" href={note.noteLink}>{note.noteLinkName}</a>
+                                    </li>
+                                    <li class="stickyInfoLi">
+                                        <span class="stickyInfoSpan">Bitiş Tarihi </span>
+                                        <input class="stickyInfoInput" type="datetime" name="" value={note.noteEndingTime}
+                                            disabled />
+                                    </li>
+                                    <li class="stickyInfoLi">
+                                        <span class="stickyInfoSpan">Güncelle-Sil </span>
 
-                        </p>
-                            <ul class="stickyInfoUl">
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
-                                    <a class="stickyInfoA" href="https://www.w3schools.com/">Algoritma Analizi</a>
-                                </li>
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Bitiş Tarihi </span>
-                                    <input class="stickyInfoInput" type="datetime" name="" value="24-07-2021"
-                                        disabled />
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                   
-                    <li class="stickyli">
-                        <div class="stickya">
-                            <h2 class="stickyh2">4 Pyhton Nedir?</h2>
-                            <p class="stickyp">Python programlama dili veri bilimi, makine öğrenimi, sistem otomasyonu,
-                            web ve API geliştirme ve daha fazlası için bir temel yapıdır.
-                            1991'den beri Python programlama dili sadece gereksiz programlar için tamamlayıcı bir
-                            dil olarak değerlendiriliyordu. Hatta “Automate the Boring Stuff” (Türkçe'ye "Sıkıcı
-                            Şeyleri Otomatikleştiren" olarak çevirebileceğimiz popüler bir kitap) adında bir kitap
-                            dahi yayınlanmıştır.
-                        </p>
-                            <ul class="stickyInfoUl">
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
-                                    <a class="stickyInfoA" href="https://www.w3schools.com/">Algoritma Analizi</a>
-                                </li>
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Bitiş Tarihi </span>
-                                    <input class="stickyInfoInput" type="datetime" name="" value="24-07-2021"
-                                        disabled />
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    
-                    <li class="stickyli">
-                        <div class="stickya">
-                            <h2 class="stickyh2">5 Algoritmaları Analizi</h2>
-                            <p class="stickyp">Algoritmalar bilgisayar programları yazmaya yararlar. Programı bir yemeğe
-                            benzetirsek, algoritmaya o yemeğin tarifi diyebiliriz. Kodlama ise tarifin,
-                            bilgisayarın anlayacağı bir programlama dili ile hazırlanmasına karşılık geliyor.
-                            Kodlamayı hakkıyla yapabilmek için öncelikle algoritma mantığını öğrenmek gerekiyor.
-                        </p>
-                            <ul class="stickyInfoUl">
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Konu İçin Yardımcı Kaynak </span>
-                                    <a class="stickyInfoA" href="https://www.w3schools.com/">Algoritma Analizi</a>
-                                </li>
-                                <li class="stickyInfoLi">
-                                    <span class="stickyInfoSpan">Bitiş Tarihi </span>
-                                    <input class="stickyInfoInput" type="datetime" name="" value="24-07-2021"
-                                        disabled />
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary m-2 btn-sm"
+                                            data-toggle="modal"
+                                            onClick={() => this.GetNoteById(note.Id)}
+                                            data-target="#NotGuncelleModal">
+                                            <i class="fa fa-edit"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal"
+                                            data-target="#NotSilModal"><i class="fa fa-times"></i></button>
+                                    </li>
+                                    <li class="stickyInfoLi">
+                                        <span class="stickyInfoSpan">Gönderilen Mentee </span>
+                                        <p class="NotMenteeName" >
+                                            {this.props.getUserByIds.map(note => (<div>{note.firstName + " " + note.lastName}</div>))}
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    ))}
 
                 </ul>
             </div>
-            // Notes End
 
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        users: state.userListReducer,
+        notes: state.noteListReducer,
+        getUserByIds: state.getUserByIdListReducer,
+        getNoteByIds: state.getNoteByIdListReducer,
+    };
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: {
+            getUser: bindActionCreators(userActions.getUser, dispatch),
+            getUserById: bindActionCreators(getUserByIdActions.getUserById, dispatch),
+            getNotes: bindActionCreators(noteActions.getNotes, dispatch),
+            getNoteById: bindActionCreators(getNoteByIdActions.getNoteById, dispatch),
+
+        },
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Notes);
