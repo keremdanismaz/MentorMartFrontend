@@ -4,31 +4,45 @@ import { Link } from "react-router-dom";
 class Navi extends Component {
     render() {
         return (
-            // <!-- Navbar Begin -->
-            <header>
-                <nav class="mb-3">
-                    <div class="nav">
-                        <input type="checkbox" id="nav-check" />
-                        <div class="nav-header">
-                            <div class="nav-title">
-                                <Link class="header" to="/"><i class="fas fa-city"></i> MentorCity</Link>
-                            </div>
-                        </div>
-                        <div class="nav-btn">
-                            <label for="nav-check">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </label>
-                        </div>
+            <header id="header" class="fixed-top">
+                <div class="container d-flex align-items-center">
+                    <h1 class="logo me-auto"><a href="/"><i class="fas fa-city"></i> MentorCity</a></h1>
+                    <nav id="navbar" class="navbar order-last order-lg-0">
+                        <ul>
+                            <Link to="/Login"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
+                            <Link to="/RegisterOption"><i class="fa fa-user-plus"></i> Kayıt Ol</Link>
+                            <Link to="/Solutions"> Çözümler</Link>
+                            <li><a href="courses.html">Fiyatlandırma</a></li>
+                            <li><a href="trainers.html">Ekran Görüntüleri</a></li>
+                            <li><a href="events.html">Müşterilerimiz</a></li>
 
-                        <div class="nav-links-right">
-                            <Link class="header" to="/Login"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
-                            <Link class="header" to="/RegisterOption"><i class="fa fa-user-plus"></i> Kayıt Ol</Link>
 
-                        </div>
-                    </div>
-                </nav>
+                            {/* <li class="dropdown"><a href="#"><span>Drop Down <i class="fas fa-caret-down"></i></span> </a>
+                                <ul>
+                                    <li><a href="#">Drop Down 1</a></li>
+                                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="fas fa-caret-right"></i></a>
+                                        <ul>
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                            <li><a href="#">Deep Drop Down 4</a></li>
+                                            <li><a href="#">Deep Drop Down 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Drop Down 2</a></li>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                    <li><a href="#">Drop Down 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li> */}
+
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav>
+
+                    <a href="courses.html" class="get-started-btn">Ücretsiz Dene</a>
+
+                </div>
             </header>
         )
     }

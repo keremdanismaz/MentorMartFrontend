@@ -1,363 +1,583 @@
 /* Section General Css Begin */
 section {
-    padding: 60px 0;
-    overflow: hidden;
-    background-color: #fff;
+  padding: 60px 0;
+  overflow: hidden;
+  background-color: #fff;
 }
-  
+
 .section-bg {
-    background-color: #f6f7f6;
+  background-color: #f6f7f6;
 }
-  
+
 .section-title {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
-  
+
 .section-title h2 {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0;
-    line-height: 1px;
-    margin: 0 0 5px 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
 }
-  
+
 .section-title h2::after {
-   content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: #9ae1af;
-    margin: 4px 10px;
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
 }
-  
+
 .section-title p {
-    margin: 0;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #37423b;
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
 }
 /* Section General Css End */
 
-/* Navbar Css Begin */
-.nav {
-    height: 50px;
-    width: 100%;
-    background-color: #B00021;
-    position: relative;
-    
+/* Carousel/ Slide CSS Begin */
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../../images/Carousel.jpg") top center;
+  background-size: cover;
+  position: relative;
 }
-  
-.nav a{
-    color:#fff!important;
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  padding-top: 72px;
+}
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px;
+  }
+}
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+#hero h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-left:3px;
+
+}
+#hero .btn-get-started:hover {
+  background: #b00021;
+  border: 2px solid #b00021;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-.nav > .nav-header {
-    display: inline;
+/**
+* Get Startet Button 
+*/
+.get-started-btn {
+  margin-left: 22px;
+  background: #be1030;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+.get-started-btn:hover {
+  background: #b00021;
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .get-started-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
 }
 
-.nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #fff ;
-    margin-left:10px;
-    margin-top:3px;
-    padding: 10px 10px 10px 10px;
+/* Carousel/ Slide CSS End */
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  margin:0px;
+  z-index: 997;
+  padding: 10px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
- 
-.nav > .nav-header > .nav-title > .header{
-    text-decoration: none;
+#header .logo {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
-.nav > .nav-btn {
+#header .logo:hover {
+  text-decoration: none;
+}
+#header .logo a {
+  color: #b00021;
+  text-decoration: none;
+}
+#header .logo img {
+  max-height: 40px;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0 10px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #37423b;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #b00021;
+  text-decoration: none;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #b00021;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #37423b;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
     display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(32, 38, 34, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37423b;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #b00021;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #b00021;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
 }
 
-.nav > .nav-links-right {
-    display: inline;
-    float: right !important ;
-    font-size: 19px;
-    margin-top:3px;
-}
-  
-.nav > .nav-links-right > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    font-weight: 500;
-    color: #ffffff !important;
-}
-  
-.nav > .nav-links-right > a:hover {
-    background-color: #fff;
-    color:#B00021 !important;
-    height:70px;
-}
-  
-.nav > #nav-check {
-    display: none;
-}
-  
-@media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      height:60px
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid rgb(255, 255, 255);
-    }
-    .nav > .nav-links-right {
-      position: absolute;
-      display: block;
-      width: 100%;
-      float: right !important;
-      background-color: #B00021;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links-right > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links-right {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links-right {
-      height: calc(35vh - 50px);
-      overflow-y: auto;
-    }
-}
-/* Navbar Css End */
+
 
 /* Ana Sayfa About Section Css Begin*/
-#About li > .fa{
-    color:#B00021;
-    border:2px solid;
-    border-radius: 20px;
-    margin:4px;
-    padding:3px;
+#About li > .fa {
+  color: #b00021;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 4px;
+  padding: 3px;
 }
 
-#About li{
-    list-style-type: none;
+#About li {
+  list-style-type: none;
 }
 
-#About p> .fa{
-    color:#B00021;
-    font-size:20px;
+#About p > .fa {
+  color: #b00021;
+  font-size: 20px;
 }
 
-#About h3{
-    font-size:27px !important;
+#About h3 {
+  font-size: 27px !important;
 }
 /*Ana Sayfa  About Section Css End */
 
 /* Ana Sayfa Neden Biz CSS Begin */
 .why-us .content {
-    padding: 30px;
-    background: #B00021;
-    border-radius: 4px;
-    color: #fff;
+  padding: 30px;
+  background: #b00021;
+  border-radius: 4px;
+  color: #fff;
 }
-  
+
 .why-us .content h3 {
-    font-weight: 700;
-    font-size: 34px;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
 }
-  
+
 .why-us .content p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-  
+
 .why-us .icon-boxes .icon-box {
-    text-align: center;
-    background: #fff;
-    padding: 40px 30px;
-    width: 100%;
-    border: 1px solid #eef0ef;
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
+  width: 100%;
+  border: 1px solid #eef0ef;
 }
-  
+
 .why-us .icon-boxes .icon-box i {
-    font-size: 32px;
-    padding: 18px;
-    color: #B00021;
-    margin-bottom: 30px;
-    background: #ecf9f0;
-    border-radius: 50px;
+  font-size: 32px;
+  padding: 18px;
+  color: #b00021;
+  margin-bottom: 30px;
+  background: #ecf9f0;
+  border-radius: 50px;
 }
-  
+
 .why-us .icon-boxes .icon-box h4 {
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0 0 30px 0;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
 }
-  
+
 .why-us .icon-boxes .icon-box p {
-    font-size: 15px;
-    color: #848484;
+  font-size: 15px;
+  color: #848484;
 }
-  /* Ana Sayfa Neden Biz CSS Begin */
+/* Ana Sayfa Neden Biz CSS Begin */
 
-  /* Ana Syafadaki Acordion Bölümü CSS Begin */
+/* Ana Syafadaki Acordion Bölümü CSS Begin */
 #Mentorsİnfo .accordion {
-    background-color: #B00021;
-    color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-weight: bold;
-    text-align: center;
+  background-color: #b00021;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  text-align: center;
 }
 
-#Mentorsİnfo .accordion > i{
-    float: right;
+#Mentorsİnfo .accordion > i {
+  float: right;
 }
 
-#Mentorsİnfo .active, .accordion:hover {
-    background-color: #fff;
-    color:#B00021;
+#Mentorsİnfo .active,
+.accordion:hover {
+  background-color: #fff;
+  color: #b00021;
 }
-  
+
 #Mentorsİnfo .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    margin: 4px;
-} 
-
-#Mentorsİnfo .headerinfo>i{
-    color:#B00021;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin: 4px;
 }
 
-#Mentorsİnfo .headerinfo> h6{
-    font-size: medium;
-    font-weight: bold;
-    display: inline-block;
+#Mentorsİnfo .headerinfo > i {
+  color: #b00021;
+}
+
+#Mentorsİnfo .headerinfo > h6 {
+  font-size: medium;
+  font-weight: bold;
+  display: inline-block;
 }
 /* Ana Syafadaki Acordion Bölümü CSS End */
 
 /* Ana Syafa Footer CSS Begin */
 #footer {
-    color: #37423b;
-    font-size: 14px;
-    background: #eef0ef;
-  }
-  
-  #footer .footer-top {
-    padding: 60px 0 30px 0;
-    background: #f9faf9;
-  }
-  
-  #footer .footer-top .footer-contact {
-    margin-bottom: 30px;
-  }
-  
-  #footer .footer-top .footer-contact h4 {
-    font-size: 22px;
-    margin: 0 0 30px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    font-weight: 700;
-  }
-  
-  #footer .footer-top .footer-contact p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
-    color: #777777;
-  }
-  
-  #footer .footer-top h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #444444;
-    position: relative;
-    padding-bottom: 12px;
-  }
-  
-  #footer a{
-      text-decoration: none !important;
-      color:#444444 !important
-  }
-  
-  #footer .credits {
-    padding-top: 5px;
-    font-size: 13px;
-  }
-  
-  #footer .credits a {
-    color: #B00021 !important;
-    transition: 0.3s;
-  }
-  #footer .social-links{
-    float:right !important;
-    margin: 10px !important;
-  }
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #B00021;
-    color: #fff !important;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer ul >li>.fa-chevron-right,.fa-arrow-right{
-      border: none!important;
-  }
-  
-  #footer .social-links a:hover {
-    background: #fff !important;
-    color: #B00021 !important;
-    text-decoration: none;
-  }
-  
-  #footer li > .fa{
-    color:#B00021;
-    border:2px solid;
-    border-radius: 20px;
-    margin:4px;
-    padding:3px;
-  }
-  
-  #footer li{
-    list-style-type: none;
-  }
-  /* Ana Syafa Footer CSS End */
-  
+  color: #37423b;
+  font-size: 14px;
+  background: #eef0ef;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #f9faf9;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer a {
+  text-decoration: none !important;
+  color: #444444 !important;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #b00021 !important;
+  transition: 0.3s;
+}
+#footer .social-links {
+  float: right !important;
+  margin: 10px !important;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #b00021;
+  color: #fff !important;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer ul > li > .fa-chevron-right,
+.fa-arrow-right {
+  border: none !important;
+}
+
+#footer .social-links a:hover {
+  background: #fff !important;
+  color: #b00021 !important;
+  text-decoration: none;
+}
+
+#footer li > .fa {
+  color: #b00021;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 4px;
+  padding: 3px;
+}
+
+#footer li {
+  list-style-type: none;
+}
+/* Ana Syafa Footer CSS End */

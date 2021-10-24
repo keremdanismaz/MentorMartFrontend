@@ -6,6 +6,7 @@ import AboutSection from "../Home Page/About Section/AboutSection"
 import WhyUsSection from '../Home Page/Why Us Section/WhyUsSection';
 import WhatMentorCity from '../Home Page/What MentorCity/WhatMentorCity';
 import Footer from '../Home Page/Footer Section/Footer';
+import Carousel from '../Home Page/Carousel/Carousel';
 
 // Kayıt Ol sayfaları Componentleri
 import RegisterOption from '../Register Page/Register Option/RegisterOption';
@@ -44,6 +45,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Solitions from '../Solitions Page/Solitions';
 
 
 function App() {
@@ -54,9 +56,16 @@ function App() {
         {/* Bütün Kullanıcıların Ulaşabildiği sayfalar- Login Olmasına gerek yok */}
         <Route exact path="/">
           <Navbar />
+          <Carousel />
           <AboutSection />
           <WhyUsSection />
           <WhatMentorCity />
+          <Footer />
+        </Route>
+
+        <Route exact path="/Solutions">
+          <Navbar />
+          <Solitions />
           <Footer />
         </Route>
 
@@ -96,7 +105,7 @@ function App() {
             </div>
           </div>
         </Route>
-        
+
         <Route exact path="/Mentee/Notes">
           <div class="d-flex" id="wrapper">
             <MenteeLeftSidebar />
@@ -106,7 +115,7 @@ function App() {
             </div>
           </div>
         </Route>
-      
+
         <Route exact path="/Mentee/Questions">
           <div class="d-flex" id="wrapper">
             <MenteeLeftSidebar />
@@ -126,7 +135,7 @@ function App() {
             </div>
           </div>
         </Route>
-        
+
         <Route exact path="/Mentee/MentorInfo">
           <div class="d-flex" id="wrapper">
             <MenteeLeftSidebar />
@@ -146,7 +155,7 @@ function App() {
             </div>
           </div>
         </Route>
-        
+
         {/* Sadece Mentorlar Ulaşabilir. */}
         <Route exact path="/Mentor/CorporationInfo">
           <div class="d-flex" id="wrapper">
@@ -157,7 +166,7 @@ function App() {
             </div>
           </div>
         </Route>
-     
+
         <Route exact path="/Mentor/Notes">
           <div class="d-flex" id="wrapper">
             <MentorLeftSidebar />
