@@ -12,8 +12,8 @@ class Navi extends Component {
                             <Link to="/Login"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
                             <Link to="/RegisterOption"><i class="fa fa-user-plus"></i> Kayıt Ol</Link>
                             <Link to="/Solutions"> Çözümler</Link>
-                            <li><a href="courses.html">Fiyatlandırma</a></li>
-                            <li><a href="trainers.html">Ekran Görüntüleri</a></li>
+                            <Link to="/Pricing"> Fiyatlandırma</Link>
+                            <Link to="/Screenshots">Ekran Görüntüleri</Link>
                             <li><a href="events.html">Müşterilerimiz</a></li>
 
 
@@ -39,8 +39,8 @@ class Navi extends Component {
                         </ul>
                         <i class="bi bi-list mobile-nav-toggle"></i>
                     </nav>
-
-                    <a href="courses.html" class="get-started-btn">Ücretsiz Dene</a>
+                    
+                    <Link class="get-started-btn" to="/Pricing"> Ücretsiz Dene</Link>
 
                 </div>
             </header>

@@ -55,7 +55,6 @@ class RegisterMentee extends Component {
 
     render() {
         const { firstName, lastName, mail, password, error } = this.state
-        const{profileObject}=this.props
         return (
             <div class="container mt-5" id="registermentee">
                 <div class="row justify-content-center">
@@ -139,9 +138,7 @@ class RegisterMentee extends Component {
                                             Mentee Olarak Kayıt Ol
                                         </button>
                                     </div>
-                                    <div class="form-group">
-                                        {profileObject}
-                                    </div>
+                                   
 
                                 </form>
 

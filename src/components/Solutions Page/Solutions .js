@@ -13,7 +13,7 @@ import Student from "../../images/Solutions/Student.jpg";
 import Veteran from "../../images/Solutions/Veteran.jpg";
 import Women from "../../images/Solutions/Women.jpg";
 
-export default class Solitions extends Component {
+export default class Solutions extends Component {
     render() {
         return (
             <div>

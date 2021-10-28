@@ -39,13 +39,18 @@ import MentorSettings from '../Mentor Pages/Settings';
 import MenteeInfo from '../Mentor Pages/MenteeInfo';
 import PersonelInformation from '../Mentor Pages/PersonelInformation';
 
+// Diğer Sayfalar
+import Solutions from '../Solutions Page/Solutions ';
+import Pricing from '../Pricing Page/Pricing';
+import ScreenShot from '../ScreenShot Page/ScreenShot';
+
+
 // React-router-dom
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Solitions from '../Solitions Page/Solitions';
 
 
 function App() {
@@ -65,7 +70,19 @@ function App() {
 
         <Route exact path="/Solutions">
           <Navbar />
-          <Solitions />
+          <Solutions />
+          <Footer />
+        </Route>
+
+        <Route exact path="/Pricing">
+          <Navbar />
+          <Pricing />
+          <Footer />
+        </Route>
+
+        <Route exact path="/Screenshots">
+          <Navbar />
+          <ScreenShot />
           <Footer />
         </Route>
 
