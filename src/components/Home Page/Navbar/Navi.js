@@ -6,7 +6,7 @@ class Navi extends Component {
         return (
             <header id="header" class="fixed-top">
                 <div class="container d-flex align-items-center">
-                    <h1 class="logo me-auto"><a href="/"><i class="fas fa-city"></i> MentorCity</a></h1>
+                    <h1 class="logo me-auto"><a href="/"><i class="fas fa-city"></i> MentorMart</a></h1>
                     <nav id="navbar" class="navbar order-last order-lg-0">
                         <ul>
                             <Link to="/Login"><i class="fa fa-sign-in-alt"></i> Giriş Yap</Link>
@@ -14,7 +14,7 @@ class Navi extends Component {
                             <Link to="/Solutions"> Çözümler</Link>
                             <Link to="/Pricing"> Fiyatlandırma</Link>
                             <Link to="/Screenshots">Ekran Görüntüleri</Link>
-                            <li><a href="events.html">Müşterilerimiz</a></li>
+                            {/* <li><a href="events.html">Müşterilerimiz</a></li>    */}
 
 
                             {/* <li class="dropdown"><a href="#"><span>Drop Down <i class="fas fa-caret-down"></i></span> </a>

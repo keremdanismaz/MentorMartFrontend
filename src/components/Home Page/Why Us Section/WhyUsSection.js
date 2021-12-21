@@ -11,9 +11,9 @@ class WhyUsSection extends Component {
                     <div class="row text-center">
                         <div class="col-lg-5 d-flex ">
                             <div class="content ">
-                                <h3 class="mt-2">Neden MentorCity?</h3>
+                                <h3 class="mt-2">Neden MentorMart?</h3>
                                 <p>
-                                    <i class="fas fa-arrow-right"></i> MentorCity sistemi, girişim merkezlerindeki
+                                    <i class="fas fa-arrow-right"></i> MentorMart sistemi, girişim merkezlerindeki
                             (hızlandırıcı, kuluçka, teknopark ) mentorluk
                             faaliyetlerinin mentorlar, girişimler ve yönetim için daha verimli, ölçülebilir ve kolay
                             yönetilebilir olmasını sağlar.

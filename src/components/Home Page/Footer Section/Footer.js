@@ -12,7 +12,7 @@ export default class Footer extends Component {
                         <div class="row">
 
                             <div class="col-lg-3 col-md-6 footer-contact">
-                                <h3>MentorCity</h3>
+                                <h3>MentorMart</h3>
                                 <p>
                                     Ankara, Turkiye <br />
                                     <strong>Phone:</strong><a href="tel://05534423783">+90 553 442 3783</a><br />
@@ -55,7 +55,7 @@ export default class Footer extends Component {
 
                     <div class="me-md-auto text-center text-md-start">
                         <div class="copyright">
-                            &copy; Copyright <strong><span>MentorCity</span></strong>. All Rights Reserved
+                            &copy; Copyright <strong><span>MentorMart</span></strong>. All Rights Reserved
                 </div>
                         <div class="credits text-center">
                             Designed by <a href="http://keydi.herokuapp.com/">Keydi</a>

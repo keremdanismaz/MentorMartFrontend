@@ -10,7 +10,7 @@ export default class LeftSidebar extends Component {
             <div class="border-right " id="sidebar-wrapper">
 
                 <div class="sidebar-heading"><i class="fas fa-city"></i>
-                    <Link to="/"> MentorCity</Link>
+                    <Link to="/"> MentorMart</Link>
                 </div>
 
                 <div class="list-group list-group-flush">
@@ -38,7 +38,7 @@ export default class LeftSidebar extends Component {
                         <a href="https://www.linkedin.com/in/kerem-dani%C5%9Fmaz-289b2319a/" class="linkedin"><i
                             class="fab fa-linkedin"></i></a>
                         <div class="copyright">
-                            2021 &copy;<span>MentorCity</span>
+                            2021 &copy;<span>MentorMart</span>
                         </div>
                     </div>
 

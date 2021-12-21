@@ -11,12 +11,12 @@ class AboutSection extends Component {
                     <div class="row">
                         <div class="col-lg-6 order-1 order-lg-2">
                             <img src={MentoringImage} class="img-fluid"
-                                alt="MentorCity" />
+                                alt="MentorMart" />
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
                             <h3>Mentorluk ve Gelişim Programlarınızı Kolayca Yürütün</h3>
                             <p>
-                                MentorCity, mentorluk, koçluk ve danışmanlık programları için geliştirilmiş bir yönetim ve
+                            MentorMart, mentorluk, koçluk ve danışmanlık programları için geliştirilmiş bir yönetim ve
                                 iletişim sistemdir.
                             </p>
                             <ul>
@@ -27,10 +27,10 @@ class AboutSection extends Component {
                                 <li><i class="fa fa-check"></i> Hem yüz yüze hem de online görüşmeler için uygundur.</li>
                             </ul>
                             <p>
-                                <i class="fa fa-info-circle"></i> MentorCity tüm kurum ve organizasyonlarda hemen devreye
-                                alınabilir. MentorCity bir danışmanlık
+                                <i class="fa fa-info-circle"></i> MentorMart tüm kurum ve organizasyonlarda hemen devreye
+                                alınabilir. MentorMart bir danışmanlık
                                 şirketi değildir. Mentorluk, koçluk veya eğitim hizmeti sunmaz. Kurum olarak eğitim ve gelişim
-                                programlarınız için danışmanlık hizmeti alıyorsanız MentorCity platformunuzu kendi
+                                programlarınız için danışmanlık hizmeti alıyorsanız MentorMart platformunuzu kendi
                                 danışmanlarınız ile birlikte yönetebilirsiniz.
                             </p>
                         </div>

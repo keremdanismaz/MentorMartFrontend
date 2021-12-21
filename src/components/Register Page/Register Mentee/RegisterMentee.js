@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import '../../../css/Register/Register.css';
+
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as corporationActions from "../../../redux/actions/corporationAction";
+
 import axios from 'axios';
+
 import alertify from "alertifyjs";
 
 class RegisterMentee extends Component {
 
     componentDidMount() {
-        this.props.actions.getCorporation();
+       // this.props.actions.getCorporation();
     }
 
     constructor(props) {
@@ -55,6 +58,7 @@ class RegisterMentee extends Component {
 
     render() {
         const { firstName, lastName, mail, password, error } = this.state
+        
         return (
             <div class="container mt-5" id="registermentee">
                 <div class="row justify-content-center">
@@ -159,6 +163,7 @@ class RegisterMentee extends Component {
         )
     }
 }
+
 function mapStateToProps(state) {
     return {
         corporations: state.corporationListReducer

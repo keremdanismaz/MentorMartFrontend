@@ -52,7 +52,7 @@ class RegisterMentor extends Component {
                                         </div>
                                         <div class="col-md-5">
                                             <img src="https://eminimind.com/wp-content/uploads/2011/11/helping.png" alt="Responsive-image" class="img-fluid" />
-                                            <p class="mt-2 font-weight-bold" style={{ color: "#B00021" }}>MentorCity- Mentorluk Programı</p>
+                                            <p class="mt-2 font-weight-bold" style={{ color: "#B00021" }}>MentorMart- Mentorluk Programı</p>
                                         </div>
                                     </div>
                                 </article>
