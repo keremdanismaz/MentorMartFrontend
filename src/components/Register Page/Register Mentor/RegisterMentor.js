@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react'
 import '../../../css/Register/Register.css';
+import RegisterMentorImage from "../../../images/RegisterMentor.png";
 import { Link } from "react-router-dom";
 
 class RegisterMentor extends Component {
@@ -51,7 +52,7 @@ class RegisterMentor extends Component {
                                             </ol>
                                         </div>
                                         <div class="col-md-5">
-                                            <img src="https://eminimind.com/wp-content/uploads/2011/11/helping.png" alt="Responsive-image" class="img-fluid" />
+                                            <img src={RegisterMentorImage} alt="Responsive-image" class="img-fluid" />
                                             <p class="mt-2 font-weight-bold" style={{ color: "#B00021" }}>MentorMart- Mentorluk Programı</p>
                                         </div>
                                     </div>

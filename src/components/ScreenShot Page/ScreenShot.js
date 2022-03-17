@@ -26,7 +26,7 @@ export default class ScreenShot extends Component {
                         <div class="row p-3">
                             <div class="col-lg-8 order-1 order-lg-2">
                                 <img src={Corporations} class="img-fluid"
-                                    alt="MentorCity" />
+                                    alt="MentorMart" />
                             </div>
                             <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1">
                                 <h2 class="text-center mt-5">Kurum Bilgileri Nedir, Ne işime yarar?</h2>
@@ -39,7 +39,7 @@ export default class ScreenShot extends Component {
                         <div class="row mt-5 p-3">
                             <div class="col-lg-8 order-2 order-lg-1">
                                 <img src={Meeting} class="img-fluid"
-                                    alt="MentorCity" />
+                                    alt="MentorMart" />
                             </div>
                             <div class="col-lg-4 pt-4 pt-lg-0 order-1 order-lg-2">
                                 <h2 class="text-center mt-5">Menteeleriniz ile toplantı günleri düzenleyin.</h2>
@@ -52,7 +52,7 @@ export default class ScreenShot extends Component {
                         <div class="row mt-5 p-3">
                             <div class="col-lg-8 order-1 order-lg-2">
                                 <img src={Mentees} class="img-fluid"
-                                    alt="MentorCity" />
+                                    alt="MentorMart" />
                             </div>
                             <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1">
                                 <h2 class="text-center mt-5">Sizden mentorlıuk eğitimi alan kullanıcılarınızı görün</h2>
@@ -65,7 +65,7 @@ export default class ScreenShot extends Component {
                         <div class="row mt-5 p-3">
                             <div class="col-lg-8 order-2 order-lg-1">
                                 <img src={Notes} class="img-fluid"
-                                    alt="MentorCity" />
+                                    alt="MentorMart" />
                             </div>
                             <div class="col-lg-4 pt-4 pt-lg-0 order-1 order-lg-2">
                                 <h2 class="text-center mt-5">Menteelerinizin çalışmalarını takip edin, onları eğitin</h2>
@@ -78,7 +78,7 @@ export default class ScreenShot extends Component {
                         <div class="row mt-5 p-3">
                             <div class="col-lg-8 order-1 order-lg-2">
                                 <img src={Question} class="img-fluid"
-                                    alt="MentorCity" />
+                                    alt="MentorMart" />
                             </div>
                             <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1">
                                 <h2 class="text-center mt-5">Menteelerinizden gelen soruları karşılayın, onlara kolayca soru sorun.</h2>
