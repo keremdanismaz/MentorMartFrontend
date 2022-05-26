@@ -9,7 +9,7 @@ export default class LeftSidebar extends Component {
                <div class="border-right " id="sidebar-wrapper">
 
                <div class="sidebar-heading"><i class="fas fa-city"></i>
-                   <Link to="/"> MentorMart</Link>
+                    MentorMart
                </div>
 
                <div class="list-group list-group-flush">
