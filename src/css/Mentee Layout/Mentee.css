@@ -216,6 +216,10 @@
 .stickyul .stickyul{
   margin:1em;
 }
+
+.noteTime{
+  width: 185px !important;
+}
 /* Notlar Css End  */
 
 /* Sorular Css Begin */

@@ -13,7 +13,7 @@ import alertify from "alertifyjs";
 class RegisterMentee extends Component {
 
     componentDidMount() {
-       // this.props.actions.getCorporation();
+        this.props.actions.getCorporation();
     }
 
     constructor(props) {
@@ -37,18 +37,17 @@ class RegisterMentee extends Component {
         e.preventDefault();
         if (this.state.password.length > 6) {
             console.log(this.state)
-            axios.post("https://localhost:44385/RegisterMentee", this.state)
+            axios.post("https://localhost:44385/Register", this.state)
                 .then(response => {
-                    console.log(response)
-
+                    alertify
+                    .alert(this.state.firstName+" "+this.state.lastName+" Başarıyla Eklenmiştir.", function () {
+                        alertify.warning('Lütfen Giriş Yapın! ');
+                    });
                 })
                 .catch(error => {
-                    console.log(error)
+                    alertify.warning('Bu maille ait kullanıcı bulunmaktadır. ');
                 })
-            alertify
-                .alert(this.state.firstName+" "+this.state.lastName+" Başarıyla Eklenmiştir.", function () {
-                    alertify.warning('Lütfen Giriş Yapın! ');
-                });
+          
         }
         else {
             this.setState({ error: "Şifreniz 6 karekterden az olamaz!" })
